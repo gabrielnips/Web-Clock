@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+
+body.dark {
+  background-color: #303030;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #303030;
+  width: 120px;
+  height: 46px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.dark .checkbox-label {
+  background-color: #fff;
+}
+
+.dark .checkbox-label .ball {
+  background-color: #303030;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+  transform: translateX(74px);
+}
+
+.fa-moon {
+  color: #303030;
+  width: 32px;
+  height: 32px;
+}
+
+.fa-sun {
+  color: #fff;
+  width: 32px;
+  height: 32px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+  margin-left: -0%;
+}
+
+.clock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+.digital-clock {
+  text-align: center;
+  width: 400px;
+}
+
+.analog-clock {
+  width: 200px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+#time {
+  font-size: 152px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #303030;
+}
+
+.dark #time {
+  color: #FFFFFF;
+}
+
+#day {
+  color: #6B6B6B;
+  font-family: Nunito;
+  width: 300px;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-top: -40px;
+  margin-left: -32px;
+}
+
+#dayInfo {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.needle {
+  background-color: var(--primary-color);
+  transition: all 0.5s ease-in;
+  position: absolute;
+  top: 50%;
+  transform-origin: bottom center;
+  width: 3px;
+  height: 165px;
+}
+
+.dark .needle.hour {
+  background-color: #fff;
+}
+
+.dark .needle.minute {
+  background-color: #fff;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  background-color: #303030;
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  background-color: #303030;
+  height: 200px;
+}
+
+.needle.second {
+  background-color: #e74c3c;
+  height: 200px;
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.center-point {
+  background-color: #e74c3c;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-point::after {
+  background-color: var(--primary-color);
+  transition: all 0.5s ease-in;
+  border-radius: 50%;
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*  Support me if you like it */
+.support {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #303030;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.support a {
+  color: #ffffff;
+  font-size: 32px;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease;
+}
+
+.support ion-icon:hover {
+  transform: scale(1.1);
+}
+
+ion-icon {
+  margin-top: 10px;
+}
