@@ -8,12 +8,12 @@ O projeto foi baseado no trabalho de Florin Pop no [CodePen](https://codepen.io/
 ## Design UX/UI
 Antes de iniciar a codificação, foi criado um design no Figma para planejar a interface do usuário e a experiência do usuário. Você pode conferir o design [aqui](https://www.figma.com/file/xI5NSRiZXcd4GXjgByAvip/Digital-and-Analogic-Clock-Website-(Community)?type=design&node-id=0%3A1&mode=design&t=JJJWVmkYSk9Lj1vv-1).
 
-## Preview
-Aqui estão duas fotos de preview do projeto:
-
-![Light Theme]([link_para_a_primeira_imagem](https://cdn.discordapp.com/attachments/988546085410721882/1127705562323357776/image.png))
-![Dark Theme]([link_para_a_segunda_imagem](https://cdn.discordapp.com/attachments/988546085410721882/1127705589091422248/image.png)https://cdn.discordapp.com/attachments/988546085410721882/1127705589091422248/image.png)
-
 ## Recursos Utilizados
 - Ícones do Ionic Icons
 - Fonte Nunito
+  
+## Preview
+Aqui estão duas fotos de preview do projeto:
+
+![Light Theme](https://cdn.discordapp.com/attachments/988546085410721882/1127705562323357776/image.png)
+![Dark Theme](https://cdn.discordapp.com/attachments/988546085410721882/1127705589091422248/image.png)
